@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Teamcity-deployer-plugin by Tiger66639</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-dark.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/respond.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!--[if lt IE 8]>
+    <link rel="stylesheet" href="stylesheets/ie.css">
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  </head>
+  <body>
+      <div id="header">
+        <nav>
+          <li class="fork"><a href="https://github.com/Tiger66639/teamcity-deployer-plugin">View On GitHub</a></li>
+          <li class="downloads"><a href="https://github.com/Tiger66639/teamcity-deployer-plugin/zipball/master">ZIP</a></li>
+          <li class="downloads"><a href="https://github.com/Tiger66639/teamcity-deployer-plugin/tarball/master">TAR</a></li>
+          <li class="title">DOWNLOADS</li>
+        </nav>
+      </div><!-- end header -->
+
+    <div class="wrapper">
+
+      <section>
+        <div id="title">
+          <h1>Teamcity-deployer-plugin</h1>
+          <p>Deployer plugin for TeamCity CI server</p>
+          <hr>
+          <span class="credits left">Project maintained by <a href="https://github.com/Tiger66639">Tiger66639</a></span>
+          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></span>
+        </div>
+
+        <h3>
+<a id="teamcity-plugin-to-upload-artifacts-to-external-locations" class="anchor" href="#teamcity-plugin-to-upload-artifacts-to-external-locations" aria-hidden="true"><span class="octicon octicon-link"></span></a>TeamCity plugin to upload artifacts to external locations</h3>
+
+<hr>
+
+<p><a href="https://travis-ci.org/Tiger66639/teamcity-deployer-plugin"><img src="https://travis-ci.org/Tiger66639/teamcity-deployer-plugin.svg?branch=build-12" alt="Build Status"></a>
+This plugin adds basic deployment functions
+to TeamCity continuous integration server
+<a href="http://www.jetbrains.com/teamcity/">http://www.jetbrains.com/teamcity/</a></p>
+
+<h4>
+<a id="installation" class="anchor" href="#installation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Installation</h4>
+
+<p>Copy zip archive to %TeamCity_data_dir%/plugins
+and restart the server. Agents will be upgraded automatically</p>
+
+<h4>
+<a id="usage" class="anchor" href="#usage" aria-hidden="true"><span class="octicon octicon-link"></span></a>Usage</h4>
+
+<p>In build configuration settings, new runners will be available for build steps.
+New runners include:</p>
+
+<ul>
+<li>SMB Deployer   - upload artifacts via SMB (Windows shares)</li>
+<li>FTP Deployer   - upload artifacts via FTP</li>
+<li>SSH Deployer   - upload artifacts via SSH (using SCP or SFTP protocols)</li>
+<li>SSH Exec       - execute arbitrary commands using SSH</li>
+<li>
+<p>Cargo Deployer - deploy WAR application archives to different servlet containers (based on Cargo library: <a href="http://cargo.codehaus.org">http://cargo.codehaus.org</a>)</p>
+
+<p>When configuring artifacts for upload, same patterns can be used as in "Artifacts Path" section of "General Settings"
+page. Including packaging artifacts to zip/tgz archives</p>
+</li>
+</ul>
+
+<h4>
+<a id="license" class="anchor" href="#license" aria-hidden="true"><span class="octicon octicon-link"></span></a>License</h4>
+
+<p>Apache, version 2.0
+<a href="http://www.apache.org/licenses/LICENSE-2.0">http://www.apache.org/licenses/LICENSE-2.0</a></p>
+      </section>
+
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    
+  </body>
+</html>
