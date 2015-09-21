@@ -1,6 +1,6 @@
 ###TeamCity plugin to upload artifacts to external locations
 ----------------------------
-
+[![Build Status](https://travis-ci.org/Tiger66639/teamcity-deployer-plugin.svg?branch=build-12)](https://travis-ci.org/Tiger66639/teamcity-deployer-plugin)
 This plugin adds basic deployment functions
 to TeamCity continuous integration server
 http://www.jetbrains.com/teamcity/
